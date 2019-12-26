@@ -36,7 +36,21 @@ namespace MathGame.MainPages.Settings_pages
             Frame.Navigate(typeof(ChangeLanguage_tmp), language);
 
         }
-        
+
+        private void SetLanguage_ua(object sender, TappedRoutedEventArgs e)
+        {
+            string language = "ua";
+            Frame.Navigate(typeof(ChangeLanguage_tmp), language);
+
+        }
+
+        private void SetLanguage_ru(object sender, TappedRoutedEventArgs e)
+        {
+            string language = "ru";
+            Frame.Navigate(typeof(ChangeLanguage_tmp), language);
+
+        }
+
         //Function to refresh page
         private bool Reload(object param = null)
         {

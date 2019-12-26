@@ -41,6 +41,12 @@ namespace MathGame.MainPages.Settings_pages.ChangeLanguage_pages
                 case "en":
                     ApplicationLanguages.PrimaryLanguageOverride = "en";
                     break;
+                case "ua":
+                    ApplicationLanguages.PrimaryLanguageOverride = "ua";
+                    break;
+                case "ru":
+                    ApplicationLanguages.PrimaryLanguageOverride = "ru";
+                    break;
                 default:
                     //error
                     break;
