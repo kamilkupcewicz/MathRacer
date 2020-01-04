@@ -50,6 +50,12 @@ namespace MathGame.MainPages.Settings_pages
             Frame.Navigate(typeof(ChangeLanguage_tmp), language);
 
         }
+        private void SetLanguage_pl(object sender, TappedRoutedEventArgs e)
+        {
+            string language = "pl";
+            Frame.Navigate(typeof(ChangeLanguage_tmp), language);
+
+        }
 
         //Function to refresh page
         private bool Reload(object param = null)

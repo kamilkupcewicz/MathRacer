@@ -118,77 +118,77 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Icon_Play.Label" xml:space="preserve">
-    <value>Play</value>
+    <value>Gra</value>
     <comment>Title for a Play page</comment>
   </data>
   <data name="Icon_Results.Label" xml:space="preserve">
-    <value>Results</value>
+    <value>Wyniki</value>
     <comment>Title for a Result page</comment>
   </data>
   <data name="Icon_Settings.Label" xml:space="preserve">
-    <value>Settings</value>
+    <value>Ustawienia</value>
     <comment>Title for a Settings page</comment>
   </data>
   <data name="Icon_Training.Label" xml:space="preserve">
-    <value>Training</value>
+    <value>Nauka</value>
     <comment>Title for a Training page</comment>
   </data>
   <data name="Label_Back.Label" xml:space="preserve">
-    <value>Back</value>
+    <value>Powrót</value>
   </data>
   <data name="Modes_2_digit.Text" xml:space="preserve">
-    <value>Two-digit numbers</value>
+    <value>Liczby dwucyfrowe</value>
   </data>
   <data name="Modes_3_digit.Text" xml:space="preserve">
-    <value>Three-digit numbers</value>
+    <value>Liczby trzycyfrowe</value>
   </data>
   <data name="Results_Add_2.Text" xml:space="preserve">
-    <value>Addition results 2 digits</value>
+    <value>Dodawanie liczb dwucyfrowych</value>
   </data>
   <data name="Results_Add_3.Text" xml:space="preserve">
-    <value>Addition results 3 digits</value>
+    <value>Dodawanie liczb trzycyfrowych</value>
   </data>
   <data name="Results_Div_2.Text" xml:space="preserve">
-    <value>Division results 2 digits</value>
+    <value>Dzielenie liczb dwucyfrowych</value>
   </data>
   <data name="Results_Div_3.Text" xml:space="preserve">
-    <value>Division results 3 digits</value>
+    <value>Dzielenie liczb trzycyfrowych</value>
   </data>
   <data name="Results_Mul_2.Text" xml:space="preserve">
-    <value>Multiplication results 2 digits</value>
+    <value>Mnożenie liczb dwucyfrowych</value>
   </data>
   <data name="Results_Mul_3.Text" xml:space="preserve">
-    <value>Multiplication results 3 digits</value>
+    <value>Mnożenie liczb trzycyfrowych</value>
   </data>
   <data name="Results_Sub_2.Text" xml:space="preserve">
-    <value>Subrtaction results 2 digits</value>
+    <value>Odejmowanie liczb dwucyfrowych</value>
   </data>
   <data name="Results_Sub_3.Text" xml:space="preserve">
-    <value>Subrtaction results 3 digits</value>
+    <value>Odejmowanie liczb trzycyfrowych</value>
   </data>
   <data name="Settings_ChangeLanguage.Content" xml:space="preserve">
-    <value>Change language</value>
+    <value>Zmiana języka</value>
   </data>
   <data name="Settings_Sound.Header" xml:space="preserve">
-    <value>Sound</value>
+    <value>Dźwięk</value>
   </data>
   <data name="Settings_Sound.OffContent" xml:space="preserve">
-    <value>Off</value>
+    <value>Wyłączony</value>
   </data>
   <data name="Settings_Sound.OnContent" xml:space="preserve">
-    <value>On</value>
+    <value>Włączony</value>
   </data>
   <data name="Settings_Theme.Header" xml:space="preserve">
-    <value>Theme choice</value>
+    <value>Motyw</value>
   </data>
   <data name="Settings_Theme.OffContent" xml:space="preserve">
-    <value>Light</value>
+    <value>Jasny</value>
   </data>
   <data name="Settings_Theme.OnContent" xml:space="preserve">
-    <value>Dark</value>
+    <value>Ciemny</value>
   </data>
   <data name="Textblock_add_2.Text" xml:space="preserve">
-    <value>When adding two digit numbers, first add the tens digit C in CD with AB (AB+C0), then add the units digit D to AB+C0 </value>
+    <value>Dodając liczby dwucyfrowe,zacznij od dodania dziesiątek  C liczby CD do AB (AB+C0),następnie dodaj jedności D liczby CD do AB+C0 </value>
   </data>
   <data name="Textblock_add_2.TextAlignment" xml:space="preserve">
     <value>Center</value>
@@ -197,7 +197,7 @@
     <value>Wrap</value>
   </data>
   <data name="Textblock_add_2_ex.Text" xml:space="preserve">
-    <value>To add 64 and 32, first add the tens digit 3 in 32 with 64: 64 + 30 = 94</value>
+    <value>Aby dodać 64 do 32,zacznij od dodania dziesiątek  liczby 32 czyli 3 do 64: 64 + 30 = 94</value>
   </data>
   <data name="Textblock_add_2_ex.TextAlignment" xml:space="preserve">
     <value>Center</value>
@@ -206,7 +206,7 @@
     <value>Wrap</value>
   </data>
   <data name="Textblock_add_2_ex_2.Text" xml:space="preserve">
-    <value>Then add the units digit 2 in 32 with 94 to get the sum of 64 and 32: 94 + 2 = 96</value>
+    <value>Następnie dodaj jedności  liczby 32 czyli do 94 aby otrzymać sumę 64 i 32: 94 + 2 = 96</value>
   </data>
   <data name="Textblock_add_2_ex_2.TextAlignment" xml:space="preserve">
     <value>Center</value>
@@ -214,53 +214,8 @@
   <data name="Textblock_add_2_ex_2.TextWrapping" xml:space="preserve">
     <value>Wrap</value>
   </data>
-  <data name="Textblock_mul_2.Text" xml:space="preserve">
-    <value>Lets look at a vertical and cross-wise technique that can be used to calculate the product of two digit numbers</value>
-  </data>
-  <data name="Textblock_mul_2.TextAlignment" xml:space="preserve">
-    <value>Center</value>
-  </data>
-  <data name="Textblock_mul_2.TextWrapping" xml:space="preserve">
-    <value>Wrap</value>
-  </data>
-  <data name="Textblock_mul_2_ex.Text" xml:space="preserve">
-    <value>To calculate the product of two digit numbers, we will divide the solution into three parts</value>
-  </data>
-  <data name="Textblock_mul_2_ex.TextAlignment" xml:space="preserve">
-    <value>Center</value>
-  </data>
-  <data name="Textblock_mul_2_ex.TextWrapping" xml:space="preserve">
-    <value>Wrap</value>
-  </data>
-  <data name="Textblock_mul_2_ex_2.Text" xml:space="preserve">
-    <value>Left most part is obtained by multiplying the tens digits 2 in 21 and 3 in 32: 2x3 = 6</value>
-  </data>
-  <data name="Textblock_mul_2_ex_2.TextAlignment" xml:space="preserve">
-    <value>Center</value>
-  </data>
-  <data name="Textblock_mul_2_ex_2.TextWrapping" xml:space="preserve">
-    <value>Wrap</value>
-  </data>
-  <data name="Textblock_mul_2_ex_3.Text" xml:space="preserve">
-    <value>To calculate the middle part, cross multiply between 2 and 2, and 3 and 1, and then adding the respective values as shown: 2x2 + 3x1= 7</value>
-  </data>
-  <data name="Textblock_mul_2_ex_3.TextAlignment" xml:space="preserve">
-    <value>Center</value>
-  </data>
-  <data name="Textblock_mul_2_ex_3.TextWrapping" xml:space="preserve">
-    <value>Wrap</value>
-  </data>
-  <data name="Textblock_mul_2_ex_4.Text" xml:space="preserve">
-    <value>Rigth most part is obtained by multiplying the digits in units place of both the numbers: 1x2 = 2. Thus we have: 21x32 = 672</value>
-  </data>
-  <data name="Textblock_mul_2_ex_4.TextAlignment" xml:space="preserve">
-    <value>Center</value>
-  </data>
-  <data name="Textblock_mul_2_ex_4.TextWrapping" xml:space="preserve">
-    <value>Wrap</value>
-  </data>
   <data name="Textblock_sub_2.Text" xml:space="preserve">
-    <value>When substracting two digit numbers, first substract the digits C in CD from AB (AB-C0), then substract the units digit D from AB-C0</value>
+    <value>Odejmując liczby dwucyfrowe,zacznij od odjęcia dziesiątek  C liczby CD od AB (AB-C0),następnie odejmij jedności D liczby CD od AB-C0</value>
   </data>
   <data name="Textblock_sub_2.TextAlignment" xml:space="preserve">
     <value>Center</value>
@@ -269,7 +224,7 @@
     <value>Wrap</value>
   </data>
   <data name="Textblock_sub_2_ex.Text" xml:space="preserve">
-    <value>In 79 - 43, first substract the tens digit 4 in 43 from 79: 79 - 40 = 39</value>
+    <value>Odjemując liczby 79 - 43,zacznij od odjęcia dziesiątek  liczby 43 czyli 4 od 79: 79 - 40 = 39</value>
   </data>
   <data name="Textblock_sub_2_ex.TextAlignment" xml:space="preserve">
     <value>Center</value>
@@ -278,7 +233,7 @@
     <value>Wrap</value>
   </data>
   <data name="Textblock_sub_2_ex_2.Text" xml:space="preserve">
-    <value>Then substract the units digit 3 in 43 from 39: 39 - 3 = 36</value>
+    <value>Następnie odejmij jedności liczby 43 czyli 3 od 39: 39 - 3 = 36</value>
   </data>
   <data name="Textblock_sub_2_ex_2.TextAlignment" xml:space="preserve">
     <value>Center</value>
@@ -287,59 +242,59 @@
     <value>Wrap</value>
   </data>
   <data name="Title_Addition.Text" xml:space="preserve">
-    <value>Addition</value>
+    <value>Dodawanie</value>
   </data>
   <data name="Title_Addition_modes.Text" xml:space="preserve">
-    <value>Addition modes</value>
+    <value>Tryby Dodawania</value>
     <comment>Title for a Play page</comment>
   </data>
   <data name="Title_Add_section.Text" xml:space="preserve">
-    <value>Addition section</value>
+    <value>Dodawanie</value>
   </data>
   <data name="Title_Division.Text" xml:space="preserve">
-    <value>Division</value>
+    <value>Dzielenie</value>
   </data>
   <data name="Title_Division_modes.Text" xml:space="preserve">
-    <value>Division modes</value>
+    <value>Tryby Dzielenia</value>
     <comment>Title for a Training page</comment>
   </data>
   <data name="Title_Div_section.Text" xml:space="preserve">
-    <value>Division section</value>
+    <value>Odejmowanie</value>
   </data>
   <data name="Title_Multiplication.Text" xml:space="preserve">
-    <value>Multiplicaiton</value>
+    <value>Mnożenie</value>
   </data>
   <data name="Title_Multiplication_modes.Text" xml:space="preserve">
-    <value>Multiplication modes</value>
+    <value>Tryby Mnożenia</value>
     <comment>Title for a Settings page</comment>
   </data>
   <data name="Title_Mul_section.Text" xml:space="preserve">
-    <value>Multiplication section</value>
+    <value>Mnożenie</value>
   </data>
   <data name="Title_Play.Text" xml:space="preserve">
-    <value>Play</value>
+    <value>Gra</value>
     <comment>Title for a Play page</comment>
   </data>
   <data name="Title_Results.Text" xml:space="preserve">
-    <value>Results</value>
+    <value>Wyniki</value>
     <comment>Title for a Result page</comment>
   </data>
   <data name="Title_Settings.Text" xml:space="preserve">
-    <value>Settings</value>
+    <value>Ustawienia</value>
     <comment>Title for a Settings page</comment>
   </data>
   <data name="Title_Substraction.Text" xml:space="preserve">
-    <value>Substraction</value>
+    <value>Odejmowanie</value>
   </data>
   <data name="Title_Substraction_modes.Text" xml:space="preserve">
-    <value>Substraction modes</value>
+    <value>Tryby Odejmowania</value>
     <comment>Title for a Result page</comment>
   </data>
   <data name="Title_Sub_section.Text" xml:space="preserve">
-    <value>Substraction section</value>
+    <value>Odejmowanie</value>
   </data>
   <data name="Title_Training.Text" xml:space="preserve">
-    <value>Training</value>
+    <value>Nauka</value>
     <comment>Title for a Training page</comment>
   </data>
 </root>
