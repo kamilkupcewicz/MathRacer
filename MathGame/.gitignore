@@ -1,1 +1,3 @@
-MathGame/bin/x86/Debug/*
+.vs/
+MathGame/bin/
+MathGame/obj/
