@@ -71,8 +71,13 @@ namespace MathGame.MainPages
                     payload.choice_game = "subtraction";
                     Frame.Navigate(typeof(Subtraction_modes), payload);
                     break;
+
+                case "multiplication":
+                                    payload.choice_game = "multiplication";
+                                    Frame.Navigate(typeof(Multiplication_modes), payload);
+                                    break;
                 default:
-                    //error
+                    
                     break;
             }
         }
