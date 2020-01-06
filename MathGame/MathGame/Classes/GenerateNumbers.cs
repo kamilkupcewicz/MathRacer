@@ -80,5 +80,33 @@ namespace MathGame.Classes
             result = a * b;
             return new[] {a, b, result};
         }
+        public static int[] Division(int digits)
+        {
+            if (digits == 2)
+            {
+                a = rnd.Next(10, 100);
+                b = rnd.Next(1, 100);
+                while (a % b != 0)
+                {
+                    b = rnd.Next(1, 100);
+                }
+            }
+            else if (digits == 3)
+            {
+                a = rnd.Next(100, 1000);
+                b = rnd.Next(100, 1000);
+                while (a % b != 0)
+                {
+                    b = rnd.Next(100, 1000);
+                }
+            }
+            else
+            {
+                throw new ArgumentException();
+            }
+
+            result = a / b;
+            return new[] {a, b, result};
+        }
     }
 }

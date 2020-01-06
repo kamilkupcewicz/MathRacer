@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using MathGame.Classes;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
-using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -14,32 +14,24 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using MathGame.Classes;
-using MathGame.MainPages.Play_pages.Play_mode_pages;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace MathGame.MainPages
+namespace MathGame.MainPages.Play_pages.Play_mode_pages
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Play : Page
+    public sealed partial class Division_modes : Page
     {
+        AnotherPagePayload payload;
 
-        public Play()
+        public Division_modes()
         {
             this.InitializeComponent();
-
-            ApplicationView.GetForCurrentView().SetPreferredMinSize(
-                new Size(
-                    500, // Width
-                    500 // Height
-                    )
-                );
-
         }
-      
+
+     
 
         private void Go_Play(object sender, RoutedEventArgs e)
         {
@@ -58,41 +50,42 @@ namespace MathGame.MainPages
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-
+            //Function for themes for each pages
             base.OnNavigatedTo(e);
             this.RequestedTheme = (ElementTheme)ApplicationData.Current.LocalSettings.Values["AppTheme"];
+            //
+
+            //Get object from previous page
+            payload = e.Parameter as AnotherPagePayload;
+            //
         }
 
 
-        private void Choose_mode(object sender, RoutedEventArgs e)
+        private void Go_Nickname_enter(object sender, RoutedEventArgs e)
         {
-            AnotherPagePayload payload = new AnotherPagePayload();
+
             string btn_name = (sender as Button).Name.ToString();
             switch (btn_name)
             {
-                case "addition":
-                    payload.choice_game = "addition";
-                    Frame.Navigate(typeof(Addition_modes), payload);
+                case "digits_2":
+                    payload.choice_mode = "digits_2";
+                    Frame.Navigate(typeof(Nickname_enter), payload);
                     break;
-                case "subtraction":
-                    payload.choice_game = "subtraction";
-                    Frame.Navigate(typeof(Subtraction_modes), payload);
+                case "digits_3":
+                    payload.choice_mode = "digits_3";
+                    Frame.Navigate(typeof(Nickname_enter), payload);
                     break;
-
-                case "multiplication":
-                                    payload.choice_game = "multiplication";
-                                    Frame.Navigate(typeof(Multiplication_modes), payload);
-                                    break;
-                case "division":
-                                    payload.choice_game = "division";
-                                    Frame.Navigate(typeof(Division_modes), payload);
-                                    break;
+                //to add
                 default:
-                    
+                    //error
                     break;
             }
         }
 
+        private void Go_Back(object sender, RoutedEventArgs e)
+        {
+            if (this.Frame != null && this.Frame.CanGoBack) this.Frame.GoBack();
+        }
 
     }
 }

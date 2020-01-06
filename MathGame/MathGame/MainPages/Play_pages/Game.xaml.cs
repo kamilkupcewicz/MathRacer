@@ -101,6 +101,26 @@ namespace MathGame.MainPages.Play_pages
                                     UI_show_task();
                                     //
                                     break;
+
+                                case "division":
+                                    switch (payload.choice_mode)
+                                    {
+                                        case "digits_2":
+                                            numbers = GenerateNumbers.Division(digits: 2);
+                                            break;
+                                        case "digits_3":
+                                            numbers = GenerateNumbers.Division(digits: 3);
+                                            break;
+                                        //to add
+                                        default:
+                                            //error
+                                            break;
+                                    }
+                    symbol.Text = "/";
+                    //UI
+                    UI_show_task();
+                    //
+                    break;
                 default:
                     //error
                     break;

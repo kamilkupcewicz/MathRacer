@@ -139,6 +139,7 @@
     <Compile Include="MainPages\Play_pages\Play_mode_pages\Addition_modes.xaml.cs">
       <DependentUpon>Addition_modes.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainPages\Play_pages\Play_mode_pages\Division_modes.xaml.cs" />
     <Compile Include="MainPages\Play_pages\Play_mode_pages\Multiplication_modes.xaml.cs" />
     <Compile Include="MainPages\Play_pages\Play_mode_pages\Subtraction_modes.xaml.cs">
       <DependentUpon>Subtraction_modes.xaml</DependentUpon>
@@ -218,6 +219,10 @@
     <Page Include="MainPages\Play_pages\Play_mode_pages\Addition_modes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPages\Play_pages\Play_mode_pages\Division_modes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainPages\Play_pages\Play_mode_pages\Multiplication_modes.xaml">
       <Generator>MSBuild:Compile</Generator>
