@@ -1,3 +1,4 @@
 .vs/
 MathGame/bin/
 MathGame/obj/
+**.DotSettings.user
