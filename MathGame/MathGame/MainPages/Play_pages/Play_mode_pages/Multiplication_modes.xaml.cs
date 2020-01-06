@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using MathGame.Classes;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
@@ -16,7 +17,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace $safeprojectname$.MainPages.Play_pages.Play_mode_pages
+namespace MathGame.MainPages.Play_pages.Play_mode_pages
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -30,11 +31,7 @@ namespace $safeprojectname$.MainPages.Play_pages.Play_mode_pages
             this.InitializeComponent();
         }
 
-        private void Go_Training(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Training));
-        }
-
+       
         private void Go_Play(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Play));
@@ -54,7 +51,7 @@ namespace $safeprojectname$.MainPages.Play_pages.Play_mode_pages
         {
             //Function for themes for each pages
             base.OnNavigatedTo(e);
-            this.RequestedTheme = (ElementTheme)ApplicationData.Current.LocalSettings.Values["AppTheme"];
+            //this.RequestedTheme = (ElementTheme)ApplicationData.Current.LocalSettings.Values["AppTheme"];
             //
 
             //Get object from previous page
