@@ -164,7 +164,6 @@
     <None Include="MathGame_TemporaryKey.pfx" />
     <PRIResource Include="Strings\pl\Resources.resw" />
     <PRIResource Include="Strings\ru\Resources.resw" />
-    <PRIResource Include="Strings\ua\Resources.resw" />
     <PRIResource Include="Strings\en\Resources.resw" />
   </ItemGroup>
   <ItemGroup>

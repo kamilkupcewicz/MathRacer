@@ -33,11 +33,7 @@
                         <TextBlock Text="Polski" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </GridViewItem>
 
-                    <GridViewItem Grid.Row="1" Grid.Column="0" Tapped="SetLanguage_ua">
-                        <TextBlock Text="Украинський" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
-                    </GridViewItem>
-
-                    <GridViewItem Grid.Row="1" Grid.Column="1" Tapped="SetLanguage_ru">
+                    <GridViewItem Grid.Row="1" Grid.Column="0" Tapped="SetLanguage_ru">
                         <TextBlock Text="Русский" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </GridViewItem>
 

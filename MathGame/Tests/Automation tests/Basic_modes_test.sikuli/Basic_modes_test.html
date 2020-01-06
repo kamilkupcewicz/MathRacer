@@ -1,0 +1,105 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>Basic_modes_test.sikuli</h2> <a href="Basic_modes_test.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+variableMode1 = <span class="skw">input</span> (<span class="str">"Choose mode (1 - Addition, 2 - Substraction, 3 - Division )"</span>)
+variableMode2 = <span class="skw">input</span> (<span class="str">"Choose mode (1 - 2_digits, 2 - 3_digits)"</span>)
+
+<span class="skw">click</span>(<img src="1578329337668.png" />)
+
+<span class="kw">if</span> variableMode1 == <span class="str">"1"</span>:
+    <span class="skw">click</span>(<img src="1578329345878.png" />)
+<span class="kw">if</span> variableMode1 == <span class="str">"2"</span>:
+    <span class="skw">click</span>(<img src="1578329353340.png" />)
+<span class="kw">if</span> variableMode1 == <span class="str">"3"</span>:
+    <span class="skw">click</span>(<img src="1578329358956.png" />)
+
+<span class="kw">if</span> variableMode2 == <span class="str">"1"</span>:
+    <span class="skw">click</span>(<img src="1578329368406.png" />)
+<span class="kw">if</span> variableMode2 == <span class="str">"2"</span>:
+    <span class="skw">click</span>(<img src="1578329374872.png" />)
+
+<span class="skw">click</span>(Pattern(<img src="1578329410740.png" />).targetOffset(-<span class="dig">30</span>,-<span class="dig">8</span>))
+
+<span class="skw">type</span>(<span class="str">"test"</span>)
+
+<span class="skw">click</span>(<img src="1578329429134.png" />)
+
+<span class="skw">click</span>(Pattern(<img src="1578329443466.png" />).targetOffset(-<span class="dig">49</span>,-<span class="dig">78</span>))
+<span class="skw">click</span>(Pattern(<img src="1578329443466.png" />).targetOffset(<span class="dig">1</span>,<span class="dig">68</span>))
+<span class="skw">click</span>(Pattern(<img src="1578329443466.png" />).targetOffset(<span class="dig">52</span>,<span class="dig">74</span>))
+
+<span class="skw">sleep</span>(<span class="dig">60</span>)
+
+<span class="skw">click</span>(<img src="1578329503196.png" />)
+</pre>
+</body>
+</html>
