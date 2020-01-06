@@ -4,4 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:MathGame">
 
+    <Application.Resources>
+        <ResourceDictionary Source = " XAMLResources\ResourceDictionaries\BrushDictionary.xaml" />
+    </Application.Resources>
 </Application>

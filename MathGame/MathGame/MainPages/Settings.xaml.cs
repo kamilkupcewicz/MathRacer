@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -27,8 +28,21 @@ namespace MathGame.MainPages
         public Settings()
         {
             this.InitializeComponent();
+            Cheking_Theme();    
             Cheking_Sound();
         }
+        public void Cheking_Theme()
+        {
+            if ((ElementTheme)ApplicationData.Current.LocalSettings.Values["AppTheme"] == ElementTheme.Dark)
+            {
+                ThemeSwitch.IsOn = true;
+            }
+            if ((ElementTheme)ApplicationData.Current.LocalSettings.Values["AppTheme"] == ElementTheme.Light)
+            {
+                ThemeSwitch.IsOn = false;
+            }
+        }
+
         public void Cheking_Sound()
         {
             if (ElementSoundPlayer.State == ElementSoundPlayerState.On)
@@ -55,6 +69,23 @@ namespace MathGame.MainPages
         {
             Frame.Navigate(typeof(Settings));
         }
+        private void Change_Theme(object sender, RoutedEventArgs e)
+        {
+            ToggleSwitch toggleSwitch = sender as ToggleSwitch;
+            if (toggleSwitch.IsOn == true)
+            {
+                ApplicationData.Current.LocalSettings.Values["AppTheme"] = (int)ElementTheme.Dark;
+                this.RequestedTheme = ElementTheme.Dark;
+            }
+            else
+            {
+                ApplicationData.Current.LocalSettings.Values["AppTheme"] = (int)ElementTheme.Light;
+                this.RequestedTheme = ElementTheme.Light;
+            }
+
+        }
+
+
         private void Sound_Status(object sender, RoutedEventArgs e)
         {
             if (SoundSwitch.IsOn)
@@ -65,6 +96,12 @@ namespace MathGame.MainPages
             {
                 ElementSoundPlayer.State = ElementSoundPlayerState.Off;
             }
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            this.RequestedTheme = (ElementTheme)ApplicationData.Current.LocalSettings.Values["AppTheme"];
         }
 
         private void Go_ChangeLanguage(object sender, RoutedEventArgs e)

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -55,7 +56,13 @@ namespace MathGame.MainPages
             Frame.Navigate(typeof(Settings));
         }
 
-      
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+
+            base.OnNavigatedTo(e);
+            this.RequestedTheme = (ElementTheme)ApplicationData.Current.LocalSettings.Values["AppTheme"];
+        }
+
 
         private void Choose_mode(object sender, RoutedEventArgs e)
         {

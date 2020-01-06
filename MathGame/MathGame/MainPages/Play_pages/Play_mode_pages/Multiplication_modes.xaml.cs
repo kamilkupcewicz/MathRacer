@@ -49,10 +49,10 @@ namespace MathGame.MainPages.Play_pages.Play_mode_pages
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            //Function for themes for each pages
+            
             base.OnNavigatedTo(e);
-            //this.RequestedTheme = (ElementTheme)ApplicationData.Current.LocalSettings.Values["AppTheme"];
-            //
+            this.RequestedTheme = (ElementTheme)ApplicationData.Current.LocalSettings.Values["AppTheme"];
+            
 
             //Get object from previous page
             payload = e.Parameter as AnotherPagePayload;

@@ -7,14 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid >
+    <Grid Background="{ThemeResource MyAcrylicBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="8*"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
-
+        
         <TextBlock Grid.Row="0" x:Uid="Title_Settings" Style="{ThemeResource HeaderTextBlockStyle}" TextAlignment="Center" Margin="16"/>
 
         <ScrollViewer Grid.Row="1">
@@ -24,6 +24,8 @@
                     <RowDefinition Height="5*"/>
                     <RowDefinition Height="3*"/>
                 </Grid.RowDefinitions>
+                <ToggleSwitch Grid.Row="0" HorizontalAlignment="Center" Name="ThemeSwitch" x:Uid="Settings_Theme" Toggled="Change_Theme" OffContent="Do work" OnContent="Working">
+                </ToggleSwitch>
                 <ToggleSwitch Grid.Row="1" HorizontalAlignment="Center" Name="SoundSwitch" x:Uid="Settings_Sound" Toggled="Sound_Status" OffContent="Do work" OnContent="Working">
                 </ToggleSwitch>
                 <Button Grid.Row="2" x:Uid="Settings_ChangeLanguage" HorizontalAlignment="Center" Click="Go_ChangeLanguage">

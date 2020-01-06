@@ -48,7 +48,9 @@ namespace MathGame.MainPages.Play_pages.Play_mode_pages
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
-        {          
+        {
+            base.OnNavigatedTo(e);
+            this.RequestedTheme = (ElementTheme)ApplicationData.Current.LocalSettings.Values["AppTheme"];
             payload = e.Parameter as AnotherPagePayload;
         }
 

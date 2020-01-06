@@ -34,6 +34,8 @@ namespace MathGame.MainPages.Play_pages.Game_pages
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            base.OnNavigatedTo(e);
+            this.RequestedTheme = (ElementTheme)ApplicationData.Current.LocalSettings.Values["AppTheme"];
             AnotherPagePayload payload = e.Parameter as AnotherPagePayload;      
 
             result.Text = payload.score.ToString();

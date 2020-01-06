@@ -1,0 +1,25 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MathGame.XAMLResources.ResourceDictionaries">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Dark">
+            <AcrylicBrush x:Key="MyAcrylicBrush"
+                          BackgroundSource="HostBackdrop"
+                          TintColor="Black"
+                          TintOpacity="0.709999984130263"/>
+        </ResourceDictionary>
+
+        <ResourceDictionary x:Key="HighContrast">
+            <SolidColorBrush x:Key="MyAcrylicBrush"
+                             Color="{ThemeResource SystemColorWindowColor}"/>
+        </ResourceDictionary>
+
+        <ResourceDictionary x:Key="Light">
+            <AcrylicBrush x:Key="MyAcrylicBrush"
+                          BackgroundSource="HostBackdrop"
+                          TintColor="White"
+                          TintOpacity="0.65"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>

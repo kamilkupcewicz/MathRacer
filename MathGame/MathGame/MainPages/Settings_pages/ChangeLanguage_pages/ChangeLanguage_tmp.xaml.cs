@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Globalization;
+using Windows.Storage;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -32,9 +33,10 @@ namespace MathGame.MainPages.Settings_pages.ChangeLanguage_pages
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-
+            base.OnNavigatedTo(e);
+            this.RequestedTheme = (ElementTheme)ApplicationData.Current.LocalSettings.Values["AppTheme"];
             string language = e.Parameter as string;
-            //
+            
 
             switch (language)
             {
