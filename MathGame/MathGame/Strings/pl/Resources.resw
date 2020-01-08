@@ -297,4 +297,49 @@
     <value>Nauka</value>
     <comment>Title for a Training page</comment>
   </data>
+  <data name="Textblock_mul_2.Text" xml:space="preserve">
+    <value>Rozważmy dwie techniki mnożenia: w słupku i na krzyż. Metody te posłużą do obliczenia wyniku mnożenia liczb dwucyfrowych.</value>
+  </data>
+  <data name="Textblock_mul_2.TextAlignment" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="Textblock_mul_2.TextWrapping" xml:space="preserve">
+    <value>Wrap</value>
+  </data>
+  <data name="Textblock_mul_2_ex.Text" xml:space="preserve">
+    <value>Aby otrzymać wynik mnożenia liczb dwucyfrowych podzielmy te rozwiąznie na trzy części.</value>
+  </data>
+  <data name="Textblock_mul_2_ex.TextAlignment" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="Textblock_mul_2_ex.TextWrapping" xml:space="preserve">
+    <value>Wrap</value>
+  </data>
+  <data name="Textblock_mul_2_ex_2.Text" xml:space="preserve">
+    <value>Lewa część powstaje jako wynik mnożenia dziesiątek liczby 21 czyli 2 i 32 czyli 3 2*3=6.</value>
+  </data>
+  <data name="Textblock_mul_2_ex_2.TextAlignment" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="Textblock_mul_2_ex_2.TextWrapping" xml:space="preserve">
+    <value>Wrap</value>
+  </data>
+  <data name="Textblock_mul_2_ex_3.Text" xml:space="preserve">
+    <value>Część środkowa powstaje jako wynik mnożenia liczby 21 i 31 na krzyż tj. 2*2 i 3*1 a następnie dodanie otrzymanych wartości: 2*2 + 3*1 =7.</value>
+  </data>
+  <data name="Textblock_mul_2_ex_3.TextAlignment" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="Textblock_mul_2_ex_3.TextWrapping" xml:space="preserve">
+    <value>Wrap</value>
+  </data>
+  <data name="Textblock_mul_2_ex_4.Text" xml:space="preserve">
+    <value>Prawa część powstaje jako wynik mnożenia jedności liczby 21 czyli 1 i 32 czyli 2. Stąd 21 * 32=672.</value>
+  </data>
+  <data name="Textblock_mul_2_ex_4.TextAlignment" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="Textblock_mul_2_ex_4.TextWrapping" xml:space="preserve">
+    <value>Wrap</value>
+  </data>
 </root>
