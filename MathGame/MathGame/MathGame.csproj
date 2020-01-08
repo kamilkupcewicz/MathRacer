@@ -155,6 +155,18 @@
     <Compile Include="MainPages\Settings_pages\ChangeLanguage_pages\ChangeLanguage_tmp.xaml.cs">
       <DependentUpon>ChangeLanguage_tmp.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainPages\Training.xaml.cs">
+      <DependentUpon>Training.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPages\Training_pages\Addition_section.xaml.cs">
+      <DependentUpon>Addition_section.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPages\Training_pages\Multiplication_section.xaml.cs">
+      <DependentUpon>Multiplication_section.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPages\Training_pages\Substraction_section.xaml.cs">
+      <DependentUpon>Substraction_section.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -167,6 +179,17 @@
     <PRIResource Include="Strings\en\Resources.resw" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Add_2.svg" />
+    <Content Include="Assets\Add_2_ex.svg" />
+    <Content Include="Assets\Add_2_ex_2.svg" />
+    <Content Include="Assets\Mul_2.svg" />
+    <Content Include="Assets\Mul_2_ex.svg" />
+    <Content Include="Assets\Mul_2_ex_2.svg" />
+    <Content Include="Assets\Mul_2_ex_3.svg" />
+    <Content Include="Assets\Mul_2_ex_4.svg" />
+    <Content Include="Assets\Sub_2.svg" />
+    <Content Include="Assets\Sub_2_ex.svg" />
+    <Content Include="Assets\Sub_2_ex_2.svg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -240,6 +263,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainPages\Settings_pages\ChangeLanguage_pages\ChangeLanguage_tmp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPages\Training.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPages\Training_pages\Addition_section.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPages\Training_pages\Multiplication_section.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPages\Training_pages\Substraction_section.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
