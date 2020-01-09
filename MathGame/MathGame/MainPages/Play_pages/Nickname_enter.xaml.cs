@@ -34,7 +34,10 @@ namespace MathGame.MainPages.Play_pages
         {
             this.InitializeComponent();
         }
-
+        private void Go_Training(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Training));
+        }
         private void Go_Play(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Play));
@@ -64,7 +67,7 @@ namespace MathGame.MainPages.Play_pages
             payload.username = nickname_block.Text;
             if (nickname_block.Text == "")
             {
-                MessageDialog message = new MessageDialog("Enter username");
+                MessageDialog message = new MessageDialog(nickname_block.Header.ToString());
                 await message.ShowAsync();
             }
             else

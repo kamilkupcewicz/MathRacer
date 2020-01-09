@@ -35,6 +35,10 @@ namespace MathGame.MainPages
         {
             this.InitializeComponent();
         }
+        private void Go_Training(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Training));
+        }
         private void Go_Play(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Play));

@@ -342,4 +342,7 @@
     <value>Training</value>
     <comment>Title for a Training page</comment>
   </data>
+  <data name="TextBlockNickname.Header" xml:space="preserve">
+    <value>Enter username</value>
+  </data>
 </root>

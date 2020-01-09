@@ -342,4 +342,7 @@
   <data name="Textblock_mul_2_ex_4.TextWrapping" xml:space="preserve">
     <value>Wrap</value>
   </data>
+  <data name="TextBlockNickname.Header" xml:space="preserve">
+    <value>Введите имя пользователя</value>
+  </data>
 </root>
