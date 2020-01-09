@@ -74,7 +74,23 @@
                     </Grid>
                 </StackPanel>
 
+                <StackPanel Background="RoyalBlue" CornerRadius="8,8,8,8" Height="112" Margin="24">
+                    <Grid Margin="8">
+                        <Button Name="division" Width="64" Height="64" HorizontalAlignment="Right" Margin="10" Click="Go_Div_section">
+                            <PathIcon Data="M32.7,0H7.1C6.3,0,5.7,0.6,5.7,1.4v10c0,0.8,0.6,1.4,1.4,1.4s1.4-0.6,1.4-1.4V2.8h22.7v28.4H8.5v-8.5c0-0.8-0.6-1.4-1.4-1.4
+	S5.7,22,5.7,22.7v10c0,0.8,0.6,1.4,1.4,1.4h25.6c0.8,0,1.4-0.6,1.4-1.4V1.4C34.1,0.6,33.5,0,32.7,0z M13.2,21.7
+	c-0.6,0.6-0.6,1.5,0,2c0.6,0.6,1.5,0.6,2,0l5.7-5.7c0,0,0,0,0,0c0,0,0.1-0.1,0.1-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1
+	c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0-0.1,0-0.1
+	c0,0,0,0,0-0.1c0-0.1,0-0.2,0-0.3c0,0,0,0,0-0.1c0,0,0-0.1,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1
+	c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0-0.1-0.1-0.1-0.1c0,0,0,0,0,0l-5.7-5.7
+	c-0.6-0.6-1.5-0.6-2,0c-0.6,0.6-0.6,1.5,0,2l3.3,3.3H1.4c-0.8,0-1.4,0.6-1.4,1.4c0,0.8,0.6,1.4,1.4,1.4h15.1L13.2,21.7z" >
+                            </PathIcon>
+                        </Button>
+                        <TextBlock x:Uid="Title_Division" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{ThemeResource TitleTextBlockStyle}" Margin="4">
 
+                        </TextBlock>
+                    </Grid>
+                </StackPanel>
             </StackPanel>
 
         </ScrollViewer>

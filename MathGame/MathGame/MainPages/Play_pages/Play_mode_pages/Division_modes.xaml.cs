@@ -47,7 +47,10 @@ namespace MathGame.MainPages.Play_pages.Play_mode_pages
         {
             Frame.Navigate(typeof(Settings));
         }
-
+        private void Go_Training(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Training));
+        }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             //Function for themes for each pages

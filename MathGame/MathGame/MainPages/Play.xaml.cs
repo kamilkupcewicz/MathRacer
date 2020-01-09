@@ -55,6 +55,10 @@ namespace MathGame.MainPages
         {
             Frame.Navigate(typeof(Settings));
         }
+        private void Go_Training(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Training));
+        }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {

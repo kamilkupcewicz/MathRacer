@@ -13,21 +13,21 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using MathGame.MainPages.Training_pages;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace MathGame.MainPages
+namespace MathGame.MainPages.Training_pages
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Training : Page
+    public sealed partial class Division_section : Page
     {
-        public Training()
+        public Division_section()
         {
             this.InitializeComponent();
         }
+
         private void Go_Training(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Training));
@@ -47,28 +47,20 @@ namespace MathGame.MainPages
         {
             Frame.Navigate(typeof(Settings));
         }
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            //Function for themes for each pages
             base.OnNavigatedTo(e);
             this.RequestedTheme = (ElementTheme)ApplicationData.Current.LocalSettings.Values["AppTheme"];
-        }
-        private void Go_Add_section(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Addition_section));
+            //
+
         }
 
-        private void Go_Sub_section(object sender, RoutedEventArgs e)
+        private void Go_Back(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Substraction_section));
+            if (this.Frame != null && this.Frame.CanGoBack) this.Frame.GoBack();
         }
 
-        private void Go_Mul_section(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Multiplication_section));
-        }
-        private void Go_Div_section(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Division_section));
-        }
     }
 }

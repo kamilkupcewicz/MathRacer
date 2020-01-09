@@ -36,7 +36,10 @@ namespace MathGame.MainPages.Play_pages.Play_mode_pages
         {
             Frame.Navigate(typeof(Play));
         }
-
+        private void Go_Training(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Training));
+        }
         private void Go_Results(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Results));

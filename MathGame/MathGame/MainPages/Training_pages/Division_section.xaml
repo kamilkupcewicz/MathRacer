@@ -1,8 +1,8 @@
 ﻿<Page
-    x:Class="MathGame.MainPages.Play_pages.Play_mode_pages.Multiplication_modes"
+    x:Class="MathGame.MainPages.Training_pages.Division_section"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:$safeprojectname$.MainPages.Play_pages.Play_mode_pages"
+    xmlns:local="using:$safeprojectname$.MainPages.Training_pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
@@ -16,57 +16,36 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" x:Uid="Title_Multiplication_modes" Style="{ThemeResource HeaderTextBlockStyle}" TextAlignment="Center" Margin="16"/>
-
-        <ScrollViewer Grid.Row="1" Height="auto" VerticalScrollMode="Enabled" VerticalScrollBarVisibility="Visible" HorizontalScrollMode="Auto" HorizontalScrollBarVisibility="Auto">
-            <StackPanel>
-
-                <StackPanel Background="#3CABDB" CornerRadius="8,8,8,8" Height="112" Margin="24">
-                    <Grid Margin="8">
-                        <Button Name="digits_2" Width="64" Height="64" HorizontalAlignment="Right" Margin="10" Click="Go_Nickname_enter">
-                            <PathIcon Data="M32.7,0H7.1C6.3,0,5.7,0.6,5.7,1.4v10c0,0.8,0.6,1.4,1.4,1.4s1.4-0.6,1.4-1.4V2.8h22.7v28.4H8.5v-8.5c0-0.8-0.6-1.4-1.4-1.4
-	S5.7,22,5.7,22.7v10c0,0.8,0.6,1.4,1.4,1.4h25.6c0.8,0,1.4-0.6,1.4-1.4V1.4C34.1,0.6,33.5,0,32.7,0z M13.2,21.7
-	c-0.6,0.6-0.6,1.5,0,2c0.6,0.6,1.5,0.6,2,0l5.7-5.7c0,0,0,0,0,0c0,0,0.1-0.1,0.1-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1
-	c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0-0.1,0-0.1
-	c0,0,0,0,0-0.1c0-0.1,0-0.2,0-0.3c0,0,0,0,0-0.1c0,0,0-0.1,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1
-	c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0-0.1-0.1-0.1-0.1c0,0,0,0,0,0l-5.7-5.7
-	c-0.6-0.6-1.5-0.6-2,0c-0.6,0.6-0.6,1.5,0,2l3.3,3.3H1.4c-0.8,0-1.4,0.6-1.4,1.4c0,0.8,0.6,1.4,1.4,1.4h15.1L13.2,21.7z" >
-                            </PathIcon>
-                        </Button>
-                        <TextBlock x:Uid="Modes_2_digit" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{ThemeResource TitleTextBlockStyle}" Margin="4">
-
-                        </TextBlock>
-                    </Grid>
-                </StackPanel>
-
-                <StackPanel Background="Coral" CornerRadius="8,8,8,8" Height="112" Margin="24">
-                    <Grid Margin="8">
-                        <Button Name="digits_3" Width="64" Height="64" HorizontalAlignment="Right" Margin="10" Click="Go_Nickname_enter">
-                            <PathIcon Data="M32.7,0H7.1C6.3,0,5.7,0.6,5.7,1.4v10c0,0.8,0.6,1.4,1.4,1.4s1.4-0.6,1.4-1.4V2.8h22.7v28.4H8.5v-8.5c0-0.8-0.6-1.4-1.4-1.4
-	S5.7,22,5.7,22.7v10c0,0.8,0.6,1.4,1.4,1.4h25.6c0.8,0,1.4-0.6,1.4-1.4V1.4C34.1,0.6,33.5,0,32.7,0z M13.2,21.7
-	c-0.6,0.6-0.6,1.5,0,2c0.6,0.6,1.5,0.6,2,0l5.7-5.7c0,0,0,0,0,0c0,0,0.1-0.1,0.1-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1
-	c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0-0.1,0-0.1
-	c0,0,0,0,0-0.1c0-0.1,0-0.2,0-0.3c0,0,0,0,0-0.1c0,0,0-0.1,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1
-	c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0-0.1-0.1-0.1-0.1c0,0,0,0,0,0l-5.7-5.7
-	c-0.6-0.6-1.5-0.6-2,0c-0.6,0.6-0.6,1.5,0,2l3.3,3.3H1.4c-0.8,0-1.4,0.6-1.4,1.4c0,0.8,0.6,1.4,1.4,1.4h15.1L13.2,21.7z" >
-                            </PathIcon>
-                        </Button>
-                        <TextBlock x:Uid="Modes_3_digit" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{ThemeResource TitleTextBlockStyle}" Margin="4">
-
-                        </TextBlock>
-                    </Grid>
-                </StackPanel>
+        <TextBlock Grid.Row="0" x:Uid="Title_Sub_section" Style="{ThemeResource HeaderTextBlockStyle}" TextAlignment="Center" Margin="16"/>
 
 
-            </StackPanel>
+        <ScrollViewer Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                
 
+
+            </Grid>
 
         </ScrollViewer>
 
 
-        <CommandBar Grid.Row="2">
 
-            <AppBarButton Name="back" x:Uid="Icon_Settings" Click="Go_Back">
+        <CommandBar Grid.Row="2">
+            <AppBarButton Name="back" x:Uid="Label_Back" Click="Go_Back">
                 <AppBarButton.Icon>
                     <PathIcon Data="M9.4,0C4.2,0,0,4.2,0,9.4s4.2,9.4,9.4,9.4s9.4-4.2,9.4-9.4S14.6,0,9.4,0z M9.4,17.3c-4.3,0-7.9-3.5-7.9-7.9s3.5-7.9,7.9-7.9
 	s7.9,3.5,7.9,7.9S13.8,17.3,9.4,17.3z M11.6,4.9c-0.3-0.3-0.8-0.3-1.1,0L6.5,8.9c-0.3,0.3-0.3,0.8,0,1.1l3.9,3.9
@@ -74,7 +53,6 @@
                     </PathIcon>
                 </AppBarButton.Icon>
             </AppBarButton>
-            
             <AppBarSeparator/>
             <AppBarButton Name="training" x:Uid="Icon_Training" Click="Go_Training">
                 <AppBarButton.Icon>
@@ -82,7 +60,6 @@
                     </PathIcon>
                 </AppBarButton.Icon>
             </AppBarButton>
-          
             <AppBarButton Name="play" x:Uid="Icon_Play" Click="Go_Play">
                 <AppBarButton.Icon>
                     <PathIcon Data="M12.9,11.2c-1.4,2.5-2.3,5-2.6,7.1c-1.8,0.2-3.7-0.1-5.4-1.1s-3-2.4-3.8-4c1.6-1.4,3.2-3.4,4.6-6c1.4-2.5,2.3-5,2.6-7.1
@@ -108,7 +85,6 @@
                     </PathIcon>
                 </AppBarButton.Icon>
             </AppBarButton>
-           
             <AppBarButton Name="settings" x:Uid="Icon_Settings" Click="Go_Settings">
                 <AppBarButton.Icon>
                     <PathIcon Data="M20.1,10.1c0-0.7-0.5-1.5-1.2-1.8C18.2,8,17.6,7.5,17.4,7c-0.2-0.5-0.1-1.3,0.2-2c0.3-0.6,0.1-1.6-0.4-2.1
@@ -125,4 +101,5 @@
         </CommandBar>
 
     </Grid>
+    
 </Page>

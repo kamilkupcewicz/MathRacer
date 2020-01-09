@@ -83,6 +83,12 @@
                     </PathIcon>
                 </AppBarButton.Icon>
             </AppBarButton>
+            <AppBarButton Name="training" x:Uid="Icon_Training" Click="Go_Training">
+                <AppBarButton.Icon>
+                    <PathIcon Data="M14.4,0.5l13,4.4l-13,5.5l-13-5.5L14.4,0.5z M21.4,15l-7,3l-7-3V9l7,3l7-3V15z">
+                    </PathIcon>
+                </AppBarButton.Icon>
+            </AppBarButton>
             <AppBarButton Name="results" x:Uid="Icon_Results" Click="Go_Results">
                 <AppBarButton.Icon>
                     <PathIcon Data="M8.3,0C7.5,0,6.4,0.1,5.9,0.2C5.1,0.2,3.6,0.4,3.5,0.4c-0.1,0-0.1,0,0,0.2l0,0.2H1.7H0v0.4c0,1.3,0.2,2.8,0.6,4
