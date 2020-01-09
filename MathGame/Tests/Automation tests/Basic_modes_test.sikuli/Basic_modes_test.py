@@ -1,4 +1,4 @@
-variableMode1 = input ("Choose mode (1 - Addition, 2 - Substraction, 3 - Division )")
+variableMode1 = input ("Choose mode (1 - Addition, 2 - Substraction, 3 - Division, 4 - Multiplication)")
 variableMode2 = input ("Choose mode (1 - 2_digits, 2 - 3_digits)")
 
 click("1578329337668.png")
@@ -9,6 +9,9 @@ if variableMode1 == "2":
     click("1578329353340.png")
 if variableMode1 == "3":
     click("1578329358956.png")
+
+if variableMode1 == "4":
+    click("1578573883947.png")
 
 if variableMode2 == "1":
     click("1578329368406.png")

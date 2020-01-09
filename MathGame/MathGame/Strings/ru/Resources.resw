@@ -297,4 +297,49 @@
     <value>Учёба</value>
     <comment>Title for a Training page</comment>
   </data>
+  <data name="Textblock_mul_2.Text" xml:space="preserve">
+    <value>Рассмотрим две техники множения: вертикально и крест на крест. Эти методики помогут нам в вычислении результата множения двухчисленных цифр.</value>
+  </data>
+  <data name="Textblock_mul_2.TextAlignment" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="Textblock_mul_2.TextWrapping" xml:space="preserve">
+    <value>Wrap</value>
+  </data>
+  <data name="Textblock_mul_2_ex.Text" xml:space="preserve">
+    <value>Чтобы получить результат множения двухчисленных цифр мы разделим наше вычисление на 3 части.</value>
+  </data>
+  <data name="Textblock_mul_2_ex.TextAlignment" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="Textblock_mul_2_ex.TextWrapping" xml:space="preserve">
+    <value>Wrap</value>
+  </data>
+  <data name="Textblock_mul_2_ex_2.Text" xml:space="preserve">
+    <value>Левую часть получаем результатом множения десятка чисел 21, тоесть 2, и 32, тоесть 3 2*3=6.</value>
+  </data>
+  <data name="Textblock_mul_2_ex_2.TextAlignment" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="Textblock_mul_2_ex_2.TextWrapping" xml:space="preserve">
+    <value>Wrap</value>
+  </data>
+  <data name="Textblock_mul_2_ex_3.Text" xml:space="preserve">
+    <value>Среднюю часть получаем результатом множения чисел 21 и 31 крест на крест, тоесть 2*2 и 3*1 а дальше складываем полученные результаты: 2*2 + 3*1 =7.</value>
+  </data>
+  <data name="Textblock_mul_2_ex_3.TextAlignment" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="Textblock_mul_2_ex_3.TextWrapping" xml:space="preserve">
+    <value>Wrap</value>
+  </data>
+  <data name="Textblock_mul_2_ex_4.Text" xml:space="preserve">
+    <value>Правую часть получаем результатом множения второй части числа 21, тоесть 1 и 32, тоесть 2. Отсюда 21 * 32=672.</value>
+  </data>
+  <data name="Textblock_mul_2_ex_4.TextAlignment" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="Textblock_mul_2_ex_4.TextWrapping" xml:space="preserve">
+    <value>Wrap</value>
+  </data>
 </root>
